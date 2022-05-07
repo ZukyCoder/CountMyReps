@@ -44,46 +44,36 @@ class NavTabBarCoordinator: Coordinator {
         self.state = next(self.state)
         switch self.state {
         case .willShowHomeFlow:
-            <#code#>
-        case .didShowHomeFlow:
-            <#code#>
+            self.goToHomeFlow()
         case .willShowFirstFlow:
-            <#code#>
-        case .didShowFirstFlow:
-            <#code#>
+            self.goToHomeFlow()
         case .willShowSecondFlow:
-            <#code#>
-        case .didShowSecondFlow:
-            <#code#>
+            self.goToHomeFlow()
         case .willShowThirdFlow:
-            <#code#>
-        case .didShowThirdFlow:
-            <#code#>
-        case .initial:
-            <#code#>
+            self.goToHomeFlow()
+        case .initial, .didShowHomeFlow, .didShowFirstFlow, .didShowSecondFlow, .didShowThirdFlow:
+            print("ERROR Unexpected Case in App Coordinator")
         }
     }
     
     func next(_ nextState: NavTabBarCoordinatorState) -> NavTabBarCoordinatorState {
         switch nextState {
-        case .willShowHomeFlow:
-            <#code#>
-        case .didShowHomeFlow:
-            <#code#>
-        case .willShowFirstFlow:
-            <#code#>
-        case .didShowFirstFlow:
-            <#code#>
-        case .willShowSecondFlow:
-            <#code#>
-        case .didShowSecondFlow:
-            <#code#>
-        case .willShowThirdFlow:
-            <#code#>
-        case .didShowThirdFlow:
-            <#code#>
         case .initial:
-            <#code#>
+            return .willShowHomeFlow
+        case .didShowHomeFlow:
+            return .willShowFirstFlow
+        case .didShowFirstFlow:
+            return .willShowSecondFlow
+        case .didShowSecondFlow:
+            return .willShowThirdFlow
+        case .didShowThirdFlow:
+            return .willShowHomeFlow
+        case .willShowHomeFlow, .willShowFirstFlow, .willShowSecondFlow, .willShowThirdFlow:
+            return nextState
         }
+    }
+    
+    private func goToHomeFlow() {
+        
     }
 }
