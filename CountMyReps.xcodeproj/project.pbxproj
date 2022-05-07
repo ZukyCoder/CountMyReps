@@ -10,12 +10,15 @@
 		001BA4242826703200F01316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001BA4232826703200F01316 /* AppDelegate.swift */; };
 		001BA4262826703200F01316 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001BA4252826703200F01316 /* SceneDelegate.swift */; };
 		001BA4282826703200F01316 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001BA4272826703200F01316 /* ViewController.swift */; };
-		001BA42B2826703200F01316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001BA4292826703200F01316 /* Main.storyboard */; };
 		001BA42D2826703300F01316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001BA42C2826703300F01316 /* Assets.xcassets */; };
 		001BA4302826703300F01316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001BA42E2826703300F01316 /* LaunchScreen.storyboard */; };
 		001BA43B2826703400F01316 /* CountMyRepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001BA43A2826703400F01316 /* CountMyRepsTests.swift */; };
 		001BA4452826703400F01316 /* CountMyRepsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001BA4442826703400F01316 /* CountMyRepsUITests.swift */; };
 		001BA4472826703400F01316 /* CountMyRepsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001BA4462826703400F01316 /* CountMyRepsUITestsLaunchTests.swift */; };
+		001BA4542826706500F01316 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001BA4532826706500F01316 /* AppCoordinator.swift */; };
+		00EA2DD828267A5B00F285CD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EA2DD728267A5B00F285CD /* Coordinator.swift */; };
+		00EA2DDB2826A78500F285CD /* SingleViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EA2DDA2826A78500F285CD /* SingleViewCoordinator.swift */; };
+		00EA2DDD2826A7FD00F285CD /* NavTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EA2DDC2826A7FD00F285CD /* NavTabBarCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		001BA4232826703200F01316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		001BA4252826703200F01316 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		001BA4272826703200F01316 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		001BA42A2826703200F01316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001BA42C2826703300F01316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001BA42F2826703300F01316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001BA4312826703300F01316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		001BA4402826703400F01316 /* CountMyRepsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountMyRepsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		001BA4442826703400F01316 /* CountMyRepsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountMyRepsUITests.swift; sourceTree = "<group>"; };
 		001BA4462826703400F01316 /* CountMyRepsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountMyRepsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		001BA4532826706500F01316 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		00EA2DD728267A5B00F285CD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		00EA2DDA2826A78500F285CD /* SingleViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewCoordinator.swift; sourceTree = "<group>"; };
+		00EA2DDC2826A7FD00F285CD /* NavTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTabBarCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,11 @@
 		001BA4222826703200F01316 /* CountMyReps */ = {
 			isa = PBXGroup;
 			children = (
+				00EA2DD928267A6200F285CD /* Utils */,
+				001BA4552826706A00F01316 /* Coordinators */,
 				001BA4232826703200F01316 /* AppDelegate.swift */,
 				001BA4252826703200F01316 /* SceneDelegate.swift */,
 				001BA4272826703200F01316 /* ViewController.swift */,
-				001BA4292826703200F01316 /* Main.storyboard */,
 				001BA42C2826703300F01316 /* Assets.xcassets */,
 				001BA42E2826703300F01316 /* LaunchScreen.storyboard */,
 				001BA4312826703300F01316 /* Info.plist */,
@@ -125,6 +132,24 @@
 				001BA4462826703400F01316 /* CountMyRepsUITestsLaunchTests.swift */,
 			);
 			path = CountMyRepsUITests;
+			sourceTree = "<group>";
+		};
+		001BA4552826706A00F01316 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				001BA4532826706500F01316 /* AppCoordinator.swift */,
+				00EA2DDA2826A78500F285CD /* SingleViewCoordinator.swift */,
+				00EA2DDC2826A7FD00F285CD /* NavTabBarCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		00EA2DD928267A6200F285CD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				00EA2DD728267A5B00F285CD /* Coordinator.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +258,6 @@
 			files = (
 				001BA4302826703300F01316 /* LaunchScreen.storyboard in Resources */,
 				001BA42D2826703300F01316 /* Assets.xcassets in Resources */,
-				001BA42B2826703200F01316 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001BA4542826706500F01316 /* AppCoordinator.swift in Sources */,
 				001BA4282826703200F01316 /* ViewController.swift in Sources */,
+				00EA2DD828267A5B00F285CD /* Coordinator.swift in Sources */,
+				00EA2DDB2826A78500F285CD /* SingleViewCoordinator.swift in Sources */,
+				00EA2DDD2826A7FD00F285CD /* NavTabBarCoordinator.swift in Sources */,
 				001BA4242826703200F01316 /* AppDelegate.swift in Sources */,
 				001BA4262826703200F01316 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +325,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		001BA4292826703200F01316 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				001BA42A2826703200F01316 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		001BA42E2826703300F01316 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
