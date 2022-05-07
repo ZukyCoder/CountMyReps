@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+@objc protocol Coordinator {
+    func start()
+    @objc optional func refresh()
+}
